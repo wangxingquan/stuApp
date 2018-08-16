@@ -22,11 +22,4 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-.contentdiv {
-  background:url("./assets/image/login.jpg") no-repeat center fixed;
-  background-size:contain;
-  background-size: cover;
-  -webkit-background-size: cover;
-  height: 90%;
-}
 </style>

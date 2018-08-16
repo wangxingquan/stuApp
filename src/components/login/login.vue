@@ -1,26 +1,24 @@
 <template>
-    <div id="logindiv">
+    <div class="note" :style ="note">
         <div class="box box-info">
-            <div class="box-header with-border">
+            <div class="with-border">
                 <h1 class="box-title">Bootstrap</h1>
             </div> 
             <div class="form-horizontal">
                 <div class="box-body">
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">login</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" placeholder="请输入账号" v-bind:value="msgInfo">
+                            <input type="text" class="form-control" placeholder="login" >
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label">password</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" placeholder="请输入密码" value="">
+                            <input type="password" class="form-control" placeholder="password" value="">
                         </div>
                     </div>
                 </div>
                 <div class="box-footer">
-                    <button class="btn btn-info" style="width: 100%;" @click="toLogin">Sign</button>
+                    <button class="btn btn-info" style="width: 50%;" @click="toLogin">Sign me in</button>
                 </div>
             </div>
         </div>
@@ -28,12 +26,13 @@
 </template>
 
 <style>
-    #logindiv {
-        width: 500px;
-        margin-left: 65%;
-        padding-top: 15%;
+
+    .box-body {
+        padding-left: 17%;
     }
-    
+    .box-footer {
+        padding-bottom: 5%;
+    }
     .box-info {
         box-shadow: 0px 0px 15px;
     }
@@ -44,11 +43,20 @@ export default {
     data: function () {
         return {
             msgInfo: 'wellcome',
+             note: {
+                backgroundImage: "url(" + ("./assets/image/login.jpg") + ")",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "25px auto",
+                marginTop: "5px",
+                width: "500px",
+                marginLeft: "65%",
+                paddingTop: "15%",
+            },
         }
     },
     methods: {
         toLogin: function() {
-            alert('起飞');
+            console.log("点击了登录按钮，path:/home");
             this.$router.push({path: '/home'});
         }
     } 
