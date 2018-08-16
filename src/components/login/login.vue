@@ -1,5 +1,5 @@
 <template>
-    <div class="note" :style ="note">
+    <div class="loginStyle">
         <div class="box box-info">
             <div class="with-border">
                 <h1 class="box-title">Bootstrap</h1>
@@ -43,15 +43,6 @@ export default {
     data: function () {
         return {
             msgInfo: 'wellcome',
-             note: {
-                backgroundImage: "url(" + ("./assets/image/login.jpg") + ")",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "25px auto",
-                marginTop: "5px",
-                width: "500px",
-                marginLeft: "65%",
-                paddingTop: "15%",
-            },
         }
     },
     methods: {

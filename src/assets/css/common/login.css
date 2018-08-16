@@ -1,0 +1,10 @@
+
+.loginStyle{
+    background-image: url("./assets/image/login.jpg");
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    margin-top: 5px;
+    width: 500px;
+    margin-left: 65%;
+    padding-top: 15%;
+}
