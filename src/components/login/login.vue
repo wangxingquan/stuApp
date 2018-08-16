@@ -25,17 +25,8 @@
     </div>
 </template>
 
-<style>
-
-    .box-body {
-        padding-left: 17%;
-    }
-    .box-footer {
-        padding-bottom: 5%;
-    }
-    .box-info {
-        box-shadow: 0px 0px 15px;
-    }
+<style scoped>
+    @import '../../assets/css/common/login.css'; 
 </style>
 
 <script>
